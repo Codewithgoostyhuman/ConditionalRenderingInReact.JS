@@ -4,13 +4,17 @@ import viteLogo from '/vite.svg'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const hasNotification = false;
+return(
+<div>
+  <h1>DashBoard</h1>
+  {hasNotification && <p>You have a new notification</p>}
+  {!hasNotification && <p>You dont have a new notification</p>}
+  </div>
 
-  return (
-    <>
-      <h1>hello world</h1>
-    </>
-  )
+  
+)
+
 }
 
 export default App
